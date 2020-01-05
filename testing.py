@@ -6,12 +6,12 @@ from urllib.request import urlopen as uReq
 from bs4 import BeautifulSoup as soup
 
 configParser = configparser.RawConfigParser()
-configFilePath = r'C:\Users\mauhy\Desktop\Escritorio\Programación\Python\siase-logger\config\config.txt'
+configFilePath = r'PATH\TO\config.txt'
 configParser.read(configFilePath)
 username = configParser.get("user-config", "username")
 password = configParser.get("user-config", "password")
 
-driver = webdriver.Chrome(r"C:\Users\mauhy\Desktop\Escritorio\Programación\Python\siase-logger\chromedriver.exe")
+driver = webdriver.Chrome(r"PATH\TO\chromedriver.exe")
 
 print(username)
 print(password)
